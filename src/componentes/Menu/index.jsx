@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './menu.module.css';
+import styles from './Menu.module.css';
 import { Link } from 'react-router-dom';
 import { List } from 'phosphor-react';
 
