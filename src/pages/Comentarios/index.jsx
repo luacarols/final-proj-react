@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { FiTrash2, FiPlus } from 'react-icons/fi'
 import { nanoid } from 'nanoid'
 import homeImg from '../../../public/image/comentarios.png'
-import styles from './comentarios.module.css'
+import styles from './Comentarios.module.css'
 
 const Comentarios = () => {
   const getLocalList = () => {
