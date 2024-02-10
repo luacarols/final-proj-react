@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import styles from './inputCep.module.css'; // Importando estilos CSS
+import styles from './inputCep.module.css';
 
 const InputCep = () => {
     const [fields, setFields] = useState({
@@ -26,13 +26,13 @@ const InputCep = () => {
         if (cepFormat.length === 8){
             const cepData = await getCep(cepFormat).catch((e) => console.log(e));
             if(!cepData.data.erro) {
-                console.log(cepData.data); // Exibir os dados do CEP no console
+                console.log(cepData.data); 
             }
         }
     }; 
 
     return (
-        <div className={styles.inputCepContainer}> {/* Adicionando classe de container */}
+        <div className={styles.inputCepContainer}> 
             <input 
                 type="text" 
                 name="cep" 
