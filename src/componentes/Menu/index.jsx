@@ -13,18 +13,18 @@ const Menu = () => {
   let menuClass = styles.menu;
   let itemClass = styles.item;
   let linkClass = styles.link;
-  let homeClass = styles.home; // Alteração aqui
+  let homeClass = styles.home; 
 
   if (open) {
     menuClass = styles.menuOpen;
     itemClass = styles.itemOpen;
     linkClass = styles.linkOpen;
-    homeClass = styles.homeOpen; // Alteração aqui
+    homeClass = styles.homeOpen; 
   }
 
   return (
     <nav>
-      <List size={32} onClick={handleMenu} className={homeClass} /> {/* Alteração aqui */}
+      <List size={32} onClick={handleMenu} className={homeClass} />
       <ul className={menuClass}>
         <li className={itemClass}>
           <Link className={linkClass} to="/">Home</Link>
