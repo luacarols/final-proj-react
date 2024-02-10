@@ -19,13 +19,11 @@ const Comentarios = () => {
   const [newTask, setNewTask] = useState('')
 
   function handleCreateNewTask() {
-    // Crie uma nova task com um id random, não permita criar caso o título seja vazio.
     const task = {
       id: nanoid(),
       title: newTask,
       isComplete: false
     }
-
     if(task.title === '') {
       return
     }
@@ -35,12 +33,11 @@ const Comentarios = () => {
   }
 
   function handleRemoveTask(id) {
-    // Remova uma task da listagem pelo ID
+    
     const tasksFiltered = list.filter(task => task.id !== id)
     setList(tasksFiltered)
   }
 
-  //salvar na localStorage
   useEffect(() => {
     localStorage.setItem('list', JSON.stringify(list))
   }, [list])
