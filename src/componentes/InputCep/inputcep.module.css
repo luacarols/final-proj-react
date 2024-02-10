@@ -1,0 +1,11 @@
+.inputCepContainer {
+    margin-bottom: 1rem;
+}
+
+.inputCep {
+    width: 80%;
+    padding: 12px 32px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
