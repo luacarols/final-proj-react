@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import styles from './InputCep.module.css'; // Importando estilos CSS
+import styles from './inputCep.module.css'; // Importando estilos CSS
 
 const InputCep = () => {
     const [fields, setFields] = useState({
